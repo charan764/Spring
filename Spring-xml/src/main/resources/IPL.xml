@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean id ="Chinnaswamy" class="com.app.Chinnaswamy"/>
+    <bean id ="Chepauk" class="com.app.Chepauk"/>
+
+
+    <bean id="PaymentFactory" class="com.app.PaymentFactory">
+            <constructor-arg ref="Chinnaswamy"/>
+    </bean>
+</beans>
